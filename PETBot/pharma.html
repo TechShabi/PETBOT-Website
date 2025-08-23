@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETBot - Pharmaceuticals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-light pe-3">
+      <div class="container-fluid px-3">
+        <a class="navbar-brand fw-bold ms-5 p-0" href="home.html">PETBot</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse position-static top-100 start-0 w-100" id="navbarNav">
+          <ul class="navbar-nav ms-auto p-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link nav-btn dropdown-toggle"
+                href=""
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item nav-btn rounded" href="jars.html">Jars</a></li>
+                <li><a class="dropdown-item nav-btn rounded" href="bottles.html">Bottles</a></li>
+                <li><a class="dropdown-item nav-btn rounded" href="oils.html">Edible Oils</a></li>
+                <li><a class="dropdown-item nav-btn rounded" href="pharma.html">Pharmaceuticals</a></li>
+                <li><a class="dropdown-item nav-btn rounded" href="chem.html">Household Chemicals</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Banner -->
+    <div class="container-fluid px-4" style="padding-top:120px">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#sortBtn">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="row mt-4 prdt-banr">
+        <div class="col-md-3 px-0 text-center">
+          <h1 class="fw-bold">All Products</h1>
+        </div>
+        <div class="col-md-3 text-center ms-4">
+          <input class="form-control shadow-sm border" onkeyup="filter()" id="search" placeholder="Search here">
+        </div>
+        <div class="col-md-3 text-center d-flex justify-content-center" id="sortBtn">
+          <div class="dropdown">
+            <button class="btn btn-md orng-btn dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Sort By Price</button>
+            <div class="dropdown-menu">
+              <button class="dropdown-item nav-btn text-center shadow-sm rounded mb-1" onclick="lowList()" style="background-color: #fff !important;">Low &#10137; High</button>
+              <button class="dropdown-item nav-btn text-center shadow-sm rounded pt-2" onclick="highList()" style="background-color: #fff !important;">High &#10137; Low</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Product -->
+    <div class="container mt-4 pt-1">
+      <div class="row g-3 mt-5 justify-content-center" id="product-list">
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal1">
+          <img src="Products/Pharmaceuticals/pharma1.webp" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">MediHold</h5>
+          <span class="fw-bold price mb-0">$30</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-regular fa-star text-warning fa-sm"></i>
+          </div>
+        </div>
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal2">
+          <img src="Products/Pharmaceuticals/pharma2.webp" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">VitaCare</h5>
+          <span class="fw-bold price mb-0">$120</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+          </div>
+        </div>
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal3">
+          <img src="Products/Pharmaceuticals/pharma3.jpg" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">HealMate</h5>
+          <span class="fw-bold price mb-0">$42</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-regular fa-star text-warning fa-sm"></i>
+            <i class="fa-regular fa-star text-warning fa-sm"></i>
+          </div>
+        </div>
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal4">
+          <img src="Products/Pharmaceuticals/pharma4.jpg" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">PureMedi</h5>
+          <span class="fw-bold price mb-0">$70</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+          </div>
+        </div>
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal5">
+          <img src="Products/Pharmaceuticals/pharma5.jpg" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">SafeDose</h5>
+          <span class="fw-bold price mb-0">$45</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+            <i class="fa-regular fa-star text-warning fa-sm"></i>
+            <i class="fa-regular fa-star text-warning fa-sm"></i>
+          </div>
+        </div>
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal6">
+          <img src="Products/Pharmaceuticals/pharma6.jpg" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">CureKeep</h5>
+          <span class="fw-bold price mb-0">$95</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-regular fa-star text-warning fa-sm"></i>
+          </div>
+        </div>
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal7">
+          <img src="Products/Pharmaceuticals/pharma7.webp" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">PharmaEase</h5>
+          <span class="fw-bold price mb-0">$75</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+          </div>
+        </div>
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal8">
+          <img src="Products/Pharmaceuticals/pharma8.jpg" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">MediServe</h5>
+          <span class="fw-bold price mb-0">$130</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+          </div>
+        </div>
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal9">
+          <img src="Products/Pharmaceuticals/pharma9.jpg" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">VitaGuard</h5>
+          <span class="fw-bold price mb-0">$145</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-regular fa-star text-warning fa-sm"></i>
+          </div>
+        </div>
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal10">
+          <img src="Products/Pharmaceuticals/pharma10.jpg" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">MedSecure</h5>
+          <span class="fw-bold price mb-0">$25</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+          </div>
+        </div>
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal11">
+          <img src="Products/Pharmaceuticals/pharma11.webp" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">CareNest</h5>
+          <span class="fw-bold price mb-0">$33</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+          </div>
+        </div>
+        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal12">
+          <img src="Products/Pharmaceuticals/pharma12.jpg" class="rounded" alt="img" id="product-images">
+          <h5 class="fw-normal family-sans-serif pt-1">MedFlow</h5>
+          <span class="fw-bold price mb-0">$74</span>
+          <div>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-solid fa-star text-warning fa-sm"></i>
+            <i class="fa-regular fa-star text-warning fa-sm"></i>
+            <i class="fa-regular fa-star text-warning fa-sm"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Product -->
+
+    <!-- Start Switch -->
+    <div class="container d-flex page-switch px-0 py-5">
+      <a href="" class="nav-btn py-2 px-3 nav-link shadow-sm border rounded">1</a>
+      <a href="" class="nav-btn py-2 px-3 ms-2 nav-link shadow-sm border rounded">2</a>
+      <a href="" class="nav-btn py-2 px-3 ms-2 nav-link shadow-sm border rounded">3</a>
+      <a href="" class="nav-btn py-2 px-3 ms-2 nav-link shadow-sm border rounded">4</a>
+      <a href="" class="nav-btn py-2 px-3 ms-2 nav-link shadow-sm border rounded">&#10137;</a>
+    </div>
+    <!-- End Switch -->
+
+    <!-- Start Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma1.webp" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">MediHold</h1>
+                <h6 class="fw-normal mt-1">Price: $30</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma2.webp" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">VitaCare</h1>
+                <h6 class="fw-normal mt-1">Price: $120</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma3.jpg" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">HealMate</h1>
+                <h6 class="fw-normal mt-1">Price: $42</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma4.jpg" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">PureMedi</h1>
+                <h6 class="fw-normal mt-1">Price: $70</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma5.jpg" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">SafeDose</h1>
+                <h6 class="fw-normal mt-1">Price: $45</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma6.jpg" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">CureKeep</h1>
+                <h6 class="fw-normal mt-1">Price: $95</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal7" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma7.webp" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">PharmaEase</h1>
+                <h6 class="fw-normal mt-1">Price: $75</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal8" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma8.jpg" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">MediServe</h1>
+                <h6 class="fw-normal mt-1">Price: $130</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal9" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma9.jpg" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">VitaGuard</h1>
+                <h6 class="fw-normal mt-1">Price: $145</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal10" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma10.jpg" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">MedSecure</h1>
+                <h6 class="fw-normal mt-1">Price: $25</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal11" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma11.webp" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">CareNest</h1>
+                <h6 class="fw-normal mt-1">Price: $33</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal12" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-modal">
+        <div class="modal-content px-5 pb-4">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <img src="Products/Pharmaceuticals/pharma12.jpg" class="rounded" width="100%" />
+              </div>
+              <div class="col-lg-6">
+                <p class="mb-2">Home / Products</p>
+                <h1 class="fw-bold mb-2">MedFlow</h1>
+                <h6 class="fw-normal mt-1">Price: $74</h6>
+                <h6 class="fw-normal mb-0">Quantity:</h6>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+                <div class="dropdown" id="qty-list">
+                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
+                  <ul class="dropdown-menu dropdown-width">
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                  </ul>
+                </div>
+                <button class="btn orng-btn mt-0">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal  -->
+
+    <!-- Start Footer -->
+    <footer class="bg-dark text-white mt-4 py-2">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-4">
+            <h5>PETBOT</h5>
+            <p>High Quality Pet Bottle Solutions</p>
+          </div>
+          <div class="col-md-2">
+            <h6>Sitemap</h6>
+            <ul>
+              <li><a class="nav-link nav-btn" href="home.html">Home</a></li>
+              <li><p class="mb-0">Products</p></li>
+              <a class="nav-link nav-btn" href="jars.html">Jars</a>
+              <a class="nav-link nav-btn" href="bottles.html">Bottles</a>
+              <a class="nav-link nav-btn" href="oils.html">Edible Oils</a>
+              <a class="nav-link nav-btn" href="pharma.html">Pharmaceuticals</a>
+              <a class="nav-link nav-btn" href="chem.html">Household Chemicals</a>
+              <li><a class="nav-link nav-btn" href="gallery.html">Gallery</a></li>
+              <li><a class="nav-link nav-btn" href="about.html">About Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Downloads</h6>
+            <a class="nav-link nav-btn" href="">Specs PDF</a>
+            <a class="nav-link nav-btn" href="">Company DOC</a>
+          </div>
+          <div class="col-md-3">
+            <h6>Contact</h6>
+            <p>Info@petbot.com<br>+00 123 4567</p>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">
+          Copyright 2025 - PETBot</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
