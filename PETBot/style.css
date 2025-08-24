@@ -7,7 +7,7 @@ html {
 
 /* Hero Image Css */
 .hero {
-  background: url("./Hero/heroImg.webp") no-repeat center top/cover,
+  background: url("./Hero/heroImg.png") no-repeat center top/cover,
   linear-gradient(#e0f7fa,#fff);
   height: 120vh;
 }
