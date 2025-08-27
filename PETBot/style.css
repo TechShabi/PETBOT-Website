@@ -7,9 +7,30 @@ html {
 
 /* Hero Image Css */
 .hero {
-  background: url("./Hero/heroImg.png") no-repeat center top/cover,
-  linear-gradient(#e0f7fa,#fff);
-  height: 120vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), 
+    url("Hero/heroImg.webp") center / cover no-repeat;
+  height: 80vh; /* mobile ke liye chhoti height */
+  
+}
+
+/* Tablet (min-width: 768px) */
+@media (min-width: 768px) {
+  .hero {
+    background: 
+      linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), 
+      url("Hero/heroImg.webp") center / cover no-repeat;
+  }
+}
+
+/* Desktop (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .hero {
+    background: 
+      linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), 
+      url("Hero/heroImg.webp") center / cover no-repeat;
+    height: 100vh;
+  }
 }
 .custom-gap {
   padding-top: 70px;
