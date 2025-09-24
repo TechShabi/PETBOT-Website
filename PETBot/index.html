@@ -14,11 +14,11 @@
   <body>
 
     <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-light pe-3">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-light pe-3" style="z-index: 1100;">
       <div class="container-fluid px-3">
-        <a class="navbar-brand fw-bold ms-5 p-0" href="index.html">PETBot</a>
+        <a class="navbar-brand fw-bold ms-4 p-0" href="index.html">PETBot</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler shadow-none"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
@@ -61,63 +61,66 @@
     </nav>
     <!-- End Navbar -->
 
+    
     <!-- Start Hero -->
     <div class="hero text-center custom-gap">
       <h1 class="display-4 fw-bold text">Premium PET/PP/PC Bottles</h1>
       <p class="lead text">Manufacturers • Suppliers • Exporters</p>
-      <a class="btn orng-btn btn-lg text" href="#categories">Explore Products &#10137;</a>
+      <a class="btn orng-btn btn-lg" href="#categories">Explore Products &#10137;</a>
     </div>
     <!-- End Hero -->
-
+    
+    
     <!-- Start Category -->
-    <div class="container-fluid px-4 custom-gap" id="categories">
+    <div class="container-fluid custom-gap" id="categories">
       <h2 class="fw-bold pt-4 pb-5 text-center mb-4 title">Categories</h2>
-      <div class="row justify-content-center g-2">
-        <div class="col-md-3 bg-light mx-2 prdt-img rounded shadow-sm border">
+      <div class="row justify-content-center g-3">
+        <div class="categories col-md-3 bg-light prdt-img mx-1 px-1 rounded shadow-sm border">
           <a class="nav-link" href="jars.html">
-            <img src="Categories/category1.webp" class="rounded" alt="img" id="category-images" />
+            <img src="Categories/category1.webp" class="img-fluid rounded" alt="img"/>
             <h5 class="fw-strong text-center pt-3 pb-2">Jars</h5>
           </a>
         </div>
-        <div class="col-md-3 bg-light mx-2 prdt-img rounded shadow-sm border">
+        <div class="categories col-md-3 bg-light prdt-img mx-1 px-1 rounded shadow-sm border">
           <a class="nav-link" href="bottles.html">
-          <img src="Categories/category2.webp" class="rounded" alt="img" id="category-images" />
-          <h5 class="fw-strong text-center pt-3 pb-2">Bottles</h5>
+            <img src="Categories/category2.webp" class="img-fluid rounded" alt="img"/>
+            <h5 class="fw-strong text-center pt-3 pb-2">Bottles</h5>
           </a>
         </div>
-        <div class="col-md-3 bg-light mx-2 prdt-img rounded shadow-sm border">
+        <div class="categories col-md-3 bg-light prdt-img mx-1 px-1 rounded shadow-sm border">
           <a class="nav-link" href="oils.html">
-          <img src="Categories/category3.webp" class="rounded" alt="img" id="category-images" />
-          <h5 class="fw-strong text-center pt-3 pb-2">Edible Oils</h5>
+            <img src="Categories/category3.webp" class="img-fluid rounded" alt="img"/>
+            <h5 class="fw-strong text-center pt-3 pb-2">Edible Oils</h5>
           </a>
         </div>
-      </div>
-      <div class="row justify-content-center g-2 mt-2">
-        <div class="col-md-3 bg-light mx-2 prdt-img rounded shadow-sm border">
+        <div class="categories col-md-3 bg-light prdt-img mx-1 px-1 rounded shadow-sm border">
           <a class="nav-link" href="pharma.html">
-          <img src="Categories/category4.webp" class="rounded" alt="img" id="category-images" />
-          <h5 class="fw-strong text-center pt-3 pb-2">Pharmaceuticals</h5>
+            <img src="Categories/category4.webp" class="img-fluid rounded" alt="img"/>
+            <h5 class="fw-strong text-center pt-3 pb-2">Pharmaceuticals</h5>
           </a>
         </div>
-        <div class="col-md-3 bg-light mx-2 prdt-img rounded shadow-sm border">
+        <div class="categories col-md-3 bg-light prdt-img mx-1 px-1 rounded shadow-sm border">
           <a class="nav-link" href="chem.html">
-          <img src="Categories/category5.webp" class="rounded" alt="img" id="category-images" />
-          <h5 class="fw-strong text-center pt-3 pb-2">Household Chemicals</h5>
+            <img src="Categories/category5.webp" class="img-fluid rounded" alt="img"/>
+            <h5 class="fw-strong text-center pt-3 pb-2">Household Chemicals</h5>
           </a>
         </div>
       </div>
-    </div>
     <!-- End Category -->
 
     <!-- Start Featured -->
-    <div class="container mt-4 pt-5">
+    <div class="container px-4 mt-4 pt-5">
       <h2 class="fw-bold pb-5 text-center title">Featured Products</h2>
       <div class="row mt-4 pt-2 g-3 justify-content-center">
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal1">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id = "h1"
+          data-name="ClearSip"
+          data-price="$80"
+          data-img="Featured/product-1.jpg">
           <img src="Featured/product-1.jpg" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif pt-1">ClearSip</h5>
-          <p class="fw-bold price mb-0">$80.00</p>
-          <span>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">ClearSip</h5>
+          <p class="fw-bold price mb-0 ps-1">$80.00</p>
+          <span class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -125,11 +128,15 @@
             <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
           </span>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal2">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id = "h2"
+          data-name="HydrateX"
+          data-price="$110"
+          data-img="Featured/product-2.webp">
           <img src="Featured/product-2.webp" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif pt-1">HydrateX</h5>
-          <p class="fw-bold price mb-0">$110.00</p>
-          <span>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">HydrateX</h5>
+          <p class="fw-bold price mb-0 ps-1">$110.00</p>
+          <span class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -137,11 +144,15 @@
             <i class="fa-solid fa-star text-warning fa-sm"></i>
           </span>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal3">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id = "h3"
+          data-name="NutriJar"
+          data-price="$95"
+          data-img="Featured/product-3.webp">
           <img src="Featured/product-3.webp" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif pt-1">NutriJar</h5>
-          <p class="fw-bold price mb-0">$95.00</p>
-          <span>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">NutriJar</h5>
+          <p class="fw-bold price mb-0 ps-1">$95.00</p>
+          <span class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -149,11 +160,15 @@
             <i class="fa-solid fa-star text-warning fa-sm"></i>
           </span>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal4">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id = "h4"
+          data-name="SafeRx"
+          data-price="$30"
+          data-img="Featured/product-4.jpg">
           <img src="Featured/product-4.jpg" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif pt-1">SafeRx</h5>
-          <p class="fw-bold price mb-0">$30.00</p>
-          <span>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">SafeRx</h5>
+          <p class="fw-bold price mb-0 ps-1">$30.00</p>
+          <span class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -161,11 +176,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </span>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal5">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id = "h5"
+          data-name="PureHold Jar"
+          data-price="$150"
+          data-img="Featured/product-5.webp">
           <img src="Featured/product-5.webp" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif pt-1">PureHold Jar</h5>
-          <p class="fw-bold price mb-0">$150.00</p>
-          <span>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">PureHold Jar</h5>
+          <p class="fw-bold price mb-0 ps-1">$150.00</p>
+          <span class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -173,11 +192,15 @@
             <i class="fa-solid fa-star text-warning fa-sm"></i>
           </span>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal6">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id = "h6"
+          data-name="CleanXtra"
+          data-price="$50"
+          data-img="Featured/product-6.jpg">
           <img src="Featured/product-6.jpg" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif pt-1">CleanXtra</h5>
-          <p class="fw-bold price mb-0">$50.00</p>
-          <span>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">CleanXtra</h5>
+          <p class="fw-bold price mb-0 ps-1">$50.00</p>
+          <span class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -185,11 +208,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </span>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal7">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id = "h7"
+          data-name="DailyMeds"
+          data-price="$20"
+          data-img="Featured/product-7.jpg">
           <img src="Featured/product-7.jpg" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif pt-1">DailyMeds</h5>
-          <p class="fw-bold price mb-0">$20.00</p>
-          <span>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">DailyMeds</h5>
+          <p class="fw-bold price mb-0 ps-1">$20.00</p>
+          <span class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -197,11 +224,15 @@
             <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
           </span>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal8">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id = "h8"
+          data-name="ChefEase"
+          data-price="$35"
+          data-img="Featured/product-8.webp">
           <img src="Featured/product-8.webp" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif pt-1">ChefEase</h5>
-          <p class="fw-bold price mb-0">$35.00</p>
-          <span>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">ChefEase</h5>
+          <p class="fw-bold price mb-0 ps-1">$35.00</p>
+          <span class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -213,8 +244,26 @@
     </div>
     <!-- End Featured -->
 
+    <!-- Start Cart Option-->
+     <button id="cart-btn" class="btn btn-md btn-light rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <i class="fa-solid fa-shopping-cart text-dark"></i>
+     </button>
+    <!-- End Cart Option -->
+
+    <!-- Start offCanvas Navbar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offCanvasNavbarLabel" style="z-index: 1100;">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title fw-strong" id="offcanvasNavbarLabel">Your Cart</h3>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="cartItems">
+          
+      </div>
+    </div>
+    <!-- End offCanvas Navbar -->
+    
     <!-- Start Modal -->
-    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered custom-modal">
         <div class="modal-content px-5 pb-4">
           <div class="modal-header">
@@ -227,291 +276,25 @@
           <div class="modal-body">
             <div class="row g-5 align-items-center">
               <div class="col-6">
-                <img src="Featured/product-1.jpg" class="rounded" width="100%" />
+                <img src="" class="rounded" id="modalImg" width="100%" />
               </div>
               <div class="col-6">
                 <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">ClearSip</h1>
-                <h6 class="fw-normal mt-1">Price: $80</h6>
+                <h1 class="fw-bold mb-2" id="modalName"></h1>
+                <h6 class="fw-normal mt-1" id="modalPrice"></h6>
                 <h6 class="fw-normal mb-0">Quantity:</h6>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
                 <div class="dropdown" id="qty-list">
                   <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
                   <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">5</a></li>
                   </ul>
                 </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Featured/product-2.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold">HydrateX</h1>
-                <h6 class="fw-normal mt-1">Price: $110</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Featured/product-3.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold">NutriJar</h1>
-                <h6 class="fw-normal mt-1">Price: $95</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Featured/product-4.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold">SafeRx</h1>
-                <h6 class="fw-normal mt-1">Price: $30</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Featured/product-5.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold">PureHold Jar</h1>
-                <h6 class="fw-normal mt-1">Price: $150</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Featured/product-6.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold">CleanXtra</h1>
-                <h6 class="fw-normal mt-1">Price: $50</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal7" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Featured/product-7.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold">DailyMeds</h1>
-                <h6 class="fw-normal mt-1">Price: $20</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal8" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Featured/product-8.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold">ChefEase</h1>
-                <h6 class="fw-normal mt-1">Price: $35</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
+                <button class="btn btn-sm orng-btn mt-0 py-2 add-btn" data-bs-dismiss="modal">Add To Cart</button>
               </div>
             </div>
           </div>
@@ -520,9 +303,14 @@
     </div>
     <!-- End Modal  -->
 
-    <!-- Start Feedback -->
+    <!-- Start Cart Message -->
+    <div class="fixed-bottom d-flex justify-content-center">
+     <p class="cart-message fw-strong text-white py-2 px-2 hide"><span class="bg-white rounded-circle p-1"><i class="fa-solid fa-check" style="color: rgb(3, 197, 3); font-size:1.2rem;"></i></span> item added to cart</p>
+    </div>
+    <!-- End Cart Message -->
 
-     <!-- include EmailJS SDK -->
+    <!-- Start Feedback -->
+    <!-- include EmailJS SDK -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <section class="py-5">
@@ -574,12 +362,12 @@
               <li><a class="nav-link nav-btn" href="about.html">About Us</a></li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-4 col-6">
             <h6>Downloads</h6>
             <a class="nav-link nav-btn" href="">Specs PDF</a>
             <a class="nav-link nav-btn" href="">Company DOC</a>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-4 col-6">
             <h6>Contact</h6>
             <p>Info@petbot.com<br>+00 123 4567</p>
           </div>

@@ -13,9 +13,9 @@ function filter() {
         }
         else {
             ProductName[i].style.display = "none";
-        }
-    }
-}
+        };
+    };
+};
 // End Search Func
 
 // Start Sort Func
@@ -47,9 +47,9 @@ function lowList() {
         if (shouldSwitch) {
             ProductName[i].parentNode.insertBefore(ProductName[i+1],ProductName[i]);
             switching = true;
-        }
-    }   
-}
+        };
+    };
+};
 
 function highList() {
     var ProductList, ProductName, i, switching, b, c, shouldSwitch;
@@ -80,13 +80,12 @@ function highList() {
         if (shouldSwitch) {
             ProductName[i].parentNode.insertBefore(ProductName[i+1],ProductName[i]);
             switching = true;
-        }
-    }
-}
+        };
+    };
+};
 // End Sort Func
 
-
-//Quantity options Func
+//Start Quantity Options Func
 const Btns = document.querySelectorAll(".qtyVal");
 
 Btns.forEach(btn => {
@@ -106,7 +105,7 @@ Btns.forEach(btn => {
     });
 });
 
-//Reset Quantity when modal is closed.
+//Reset Quantity when modal is closed
 document.addEventListener("click", function(e) {
     if(e.target.classList.contains("btn-close")) {
         
@@ -119,6 +118,133 @@ document.addEventListener("click", function(e) {
             }
         }
     }
+    if(e.target.classList.contains("add-btn")) {
+        //Modal kai andar dropdown button find karo
+        let modal = e.target.closest(".modal");
+        if(modal) {
+            let btn = modal.querySelector(".qty");
+            if(btn) {
+                btn.textContent = "1";
+            }
+        }
+    }
+});
+//End Quantity Options Func
+
+
+//Start Dynamic Modal
+let selectedProduct = {};
+let addedProducts = new Set(); //store id's of products already added
+
+// Find Product Id
+document.getElementById("modal").addEventListener('show.bs.modal', function(event) {
+    let card = event.relatedTarget; //jis product sai modal khula
+    let productId = card.dataset.id;
+
+    document.querySelectorAll('.product').forEach(prod => {
+        prod.addEventListener('click', () => {
+            selectedProduct = { 
+                id: productId,
+                name: prod.dataset.name,
+                price: prod.dataset.price,
+                img: prod.dataset.img
+            };
+            
+            document.getElementById('modalName').innerText = selectedProduct.name;
+            document.getElementById('modalPrice').innerText = "Price: " + selectedProduct.price;
+            document.getElementById('modalImg').src = selectedProduct.img;
+            
+            //Add Button Disabled
+            const btn = document.querySelector(".add-btn");
+            
+            if(addedProducts.has(selectedProduct.id)) {
+                btn.disabled = true;
+                btn.innerText = "Added";
+            } else {
+                btn.disabled = false;
+                btn.innerText = "Add To Cart";
+            }
+        });
+    });
+});   
+//End Dynamic Modal
+
+//Add To Cart
+let cartMsg = document.querySelector(".cart-message");
+
+document.addEventListener("click", function(e) {
+    if(e.target.classList.contains("add-btn")) {
+        
+        let cart = JSON.parse(localStorage.getItem("cart")) || []; //pura cart localStorage sai uthao 
+        
+        if(!addedProducts.has(selectedProduct.id)) {
+            cart.push(selectedProduct); //naya product add karo
+            localStorage.setItem("cart", JSON.stringify(cart)); //wapis localStorage mai save karo
+            
+            addedProducts.add(selectedProduct.id); //product ko "added" mark kar diya
+            cartMsg.classList.remove('hide');
+            document.getElementById('cart-btn').style.display = "block";
+
+            renderCart();
+            
+            setTimeout(() => {
+                cartMsg.classList.add('hide');
+            }, 2000);
+        }
+    }
 });
 
+
+function renderCart() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let cartItems = document.getElementById('cartItems');
+
+    cartItems.innerHTML = "";
+
+    if(cart.length === 0) {
+        document.getElementById('cart-btn').style.display = "none";
+    } else {
+        document.getElementById('cart-btn').style.display = "block";
+        cartItems.innerHTML = "";
+        cart.forEach(item => {
+            cartItems.innerHTML += `
+            <div class="d-flex align-items-center mb-2">
+                <img src="${item.img}" width="60" class="me-2">
+                <div>
+                    <small class="mb-0">${item.name}</small>
+                    <h6>Rs. ${item.price}<h6>
+                </div>
+                <button class="btn btn-sm ms-auto" onclick="removeItem('${item.id}')">
+                    <i class="fas fa-trash text-danger"></i>
+                </button>
+            </div>`
+        });
+    }
+}
+
+
+function removeItem(id) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    
+    cart = cart.filter(item => String(item.id) !== String(id));
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    
+    addedProducts.delete(String(id));
+
+    
+    renderCart();
+    
+    document.getElementById('cart-btn').style.display = "none";
+
+    const btn = document.querySelector(`.add-btn[data-id="${String(id)}"]`);
+    if(btn) {
+        btn.disabled = false;
+        btn.innerText = "Add To Cart";
+    }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderCart(); //har page load pai cart auto show hooga
+});
 

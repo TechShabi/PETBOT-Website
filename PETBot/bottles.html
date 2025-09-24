@@ -15,11 +15,11 @@
   <body>
 
     <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-light pe-3">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-light pe-3" style="z-index: 1100;">
       <div class="container-fluid px-3">
-        <a class="navbar-brand fw-bold ms-5 p-0" href="index.html">PETBot</a>
+        <a class="navbar-brand fw-bold ms-4 p-0" href="index.html">PETBot</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler shadow-none"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
@@ -90,11 +90,15 @@
     <!-- Start Product -->
     <div class="container mt-4 pt-1">
       <div class="row g-3 mt-5 justify-content-center" id="product-list">
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal1">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b1"
+          data-name="AquaPure"
+          data-price="$43"
+          data-img="Products/Bottles/bottle1.jpeg">
           <img src="Products/Bottles/bottle1.jpeg" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">AquaPure</h5>
-          <span class="fw-bold price mb-0">$43</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">AquaPure</h5>
+          <span class="fw-bold price mb-0 ps-1">$43</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -102,11 +106,15 @@
             <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal2">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b2"
+          data-name="VitaFlow"
+          data-price="$90"
+          data-img="Products/Bottles/bottle2.webp">
           <img src="Products/Bottles/bottle2.webp" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">VitaFlow</h5>
-          <span class="fw-bold price mb-0">$90</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">VitaFlow</h5>
+          <span class="fw-bold price mb-0 ps-1">$90</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -114,11 +122,15 @@
             <i class="fa-solid fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal3">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b3"
+          data-name="FreshDrop"
+          data-price="$115"
+          data-img="Products/Bottles/bottle3.jpg">
           <img src="Products/Bottles/bottle3.jpg" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">FreshDrop</h5>
-          <span class="fw-bold price mb-0">$115</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">FreshDrop</h5>
+          <span class="fw-bold price mb-0 ps-1">$115</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -126,11 +138,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal4">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b4"
+          data-name="SafeSip"
+          data-price="$80"
+          data-img="Products/Bottles/bottle4.webp">
           <img src="Products/Bottles/bottle4.webp" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">SafeSip</h5>
-          <span class="fw-bold price mb-0">$80</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">SafeSip</h5>
+          <span class="fw-bold price mb-0 ps-1">$80</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -138,11 +154,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal5">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b5"
+          data-name="DailyDrink"
+          data-price="$30"
+          data-img="Products/Bottles/bottle5.webp">
           <img src="Products/Bottles/bottle5.webp" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">DailyDrink</h5>
-          <span class="fw-bold price mb-0">$30</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">DailyDrink</h5>
+          <span class="fw-bold price mb-0 ps-1">$30</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -150,11 +170,15 @@
             <i class="fa-solid fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal6">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b6"
+          data-name="HydroMax"
+          data-price="$55"
+          data-img="Products/Bottles/bottle6.webp">
           <img src="Products/Bottles/bottle6.webp" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">HydroMax</h5>
-          <span class="fw-bold price mb-0">$55</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">HydroMax</h5>
+          <span class="fw-bold price mb-0 ps-1">$55</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -162,11 +186,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal7">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b7"
+          data-name="ChillMate"
+          data-price="$35"
+          data-img="Products/Bottles/bottle7.webp">
           <img src="Products/Bottles/bottle7.webp" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">ChillMate</h5>
-          <span class="fw-bold price mb-0">$35</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">ChillMate</h5>
+          <span class="fw-bold price mb-0 ps-1">$35</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -174,11 +202,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal8">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b8"
+          data-name="SwiftSip"
+          data-price="$40"
+          data-img="Products/Bottles/bottle8.jpg">
           <img src="Products/Bottles/bottle8.jpg" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">SwiftSip</h5>
-          <span class="fw-bold price mb-0">$40</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">SwiftSip</h5>
+          <span class="fw-bold price mb-0 ps-1">$40</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -186,11 +218,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal9">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b9"
+          data-name="EasySip"
+          data-price="$89"
+          data-img="Products/Bottles/bottle9.jpg">
           <img src="Products/Bottles/bottle9.jpg" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">EasySip</h5>
-          <span class="fw-bold price mb-0">$89</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">EasySip</h5>
+          <span class="fw-bold price mb-0 ps-1">$89</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -198,11 +234,15 @@
             <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal10">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b10"
+          data-name="CoolFlow"
+          data-price="$122"
+          data-img="Products/Bottles/bottle10.jpg">
           <img src="Products/Bottles/bottle10.jpg" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">CoolFlow</h5>
-          <span class="fw-bold price mb-0">$122</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">CoolFlow</h5>
+          <span class="fw-bold price mb-0 ps-1">$122</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -210,11 +250,15 @@
             <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal11">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b11"
+          data-name="AquaNest"
+          data-price="$33"
+          data-img="Products/Bottles/bottle11.png">
           <img src="Products/Bottles/bottle11.png" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">AquaNest</h5>
-          <span class="fw-bold price mb-0">$33</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">AquaNest</h5>
+          <span class="fw-bold price mb-0 ps-1">$33</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -222,11 +266,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal12">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="b12"
+          data-name="PureStream"
+          data-price="$60"
+          data-img="Products/Bottles/bottle12.webp">
           <img src="Products/Bottles/bottle12.webp" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">PureStream</h5>
-          <span class="fw-bold price mb-0">$60</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">PureStream</h5>
+          <span class="fw-bold price mb-0 ps-1">$60</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -248,11 +296,29 @@
     </div>
     <!-- End Switch -->
 
+    <!-- Start Cart Option-->
+     <button id="cart-btn" class="btn btn-md btn-light rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <i class="fa-solid fa-shopping-cart text-dark"></i>
+     </button>
+    <!-- End Cart Option -->
+
+    <!-- Start offCanvas Navbar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offCanvasNavbarLabel" style="z-index: 1100;">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title fw-strong" id="offcanvasNavbarLabel">Your Cart</h3>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="cartItems">
+          
+      </div>
+    </div>
+    <!-- End offCanvas Navbar -->
+    
     <!-- Start Modal -->
-    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered custom-modal">
         <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
+          <div class="modal-header">
             <button
               type="button"
               class="btn-close shadow-none"
@@ -262,444 +328,25 @@
           <div class="modal-body">
             <div class="row g-5 align-items-center">
               <div class="col-6">
-                <img src="Products/Bottles/bottle1.jpeg" class="rounded" width="100%" />
+                <img src="" class="rounded" id="modalImg" width="100%" />
               </div>
               <div class="col-6">
                 <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">AquaPure</h1>
-                <h6 class="fw-normal mt-1">Price: $43</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <br />
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Bottles/bottle2.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">VitaFlow</h1>
-                <h6 class="fw-normal mt-1">Price: $90</h6>
+                <h1 class="fw-bold mb-2" id="modalName"></h1>
+                <h6 class="fw-normal mt-1" id="modalPrice"></h6>
                 <h6 class="fw-normal mb-0">Quantity:</h6>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
                 <div class="dropdown" id="qty-list">
                   <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
                   <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">5</a></li>
                   </ul>
                 </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Bottles/bottle3.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">FreshDrop</h1>
-                <h6 class="fw-normal mt-1">Price: $115</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Bottles/bottle4.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">SafeSip</h1>
-                <h6 class="fw-normal mt-1">Price: $80</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Bottles/bottle5.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">DailyDrink</h1>
-                <h6 class="fw-normal mt-1">Price: $30</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Bottles/bottle6.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">HydroMax</h1>
-                <h6 class="fw-normal mt-1">Price: $55</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal7" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Bottles/bottle7.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">ChillMate</h1>
-                <h6 class="fw-normal mt-1">Price: $35</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal8" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Bottles/bottle8.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">SwiftSip</h1>
-                <h6 class="fw-normal mt-1">Price: $40</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal9" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Bottles/bottle9.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">EasySip</h1>
-                <h6 class="fw-normal mt-1">Price: $89</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal10" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Bottles/bottle10.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">CoolFlow</h1>
-                <h6 class="fw-normal mt-1">Price: $122</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal11" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Bottles/bottle11.png" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">AquaNest</h1>
-                <h6 class="fw-normal mt-1">Price: $33</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal12" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header shadow-none">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Bottles/bottle12.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">PureStream</h1>
-                <h6 class="fw-normal mt-1">Price: $60</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
+                <button class="btn btn-sm orng-btn mt-0 py-2 add-btn" data-bs-dismiss="modal">Add To Cart</button>
               </div>
             </div>
           </div>
@@ -707,6 +354,12 @@
       </div>
     </div>
     <!-- End Modal  -->
+
+    <!-- Start Cart Message -->
+    <div class="fixed-bottom d-flex justify-content-center">
+     <p class="cart-message fw-strong text-white py-2 px-2 hide"><span class="bg-white rounded-circle p-1"><i class="fa-solid fa-check" style="color: rgb(3, 197, 3); font-size:1.2rem;"></i></span> item added to cart</p>
+    </div>
+    <!-- End Cart Message -->
 
     <!-- Start Footer -->
     <footer class="bg-dark text-white mt-4 py-2">

@@ -15,11 +15,11 @@
   <body>
 
     <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-light pe-3">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-light pe-3" style="z-index: 1100;">
       <div class="container-fluid px-3">
-        <a class="navbar-brand fw-bold ms-5 p-0" href="index.html">PETBot</a>
+        <a class="navbar-brand fw-bold ms-4 p-0" href="index.html">PETBot</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler shadow-none"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
@@ -90,11 +90,15 @@
     <!-- Start Product -->
     <div class="container mt-4 pt-1">
       <div class="row g-3 mt-5 justify-content-center" id="product-list">
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal1">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c1"
+          data-name="CleanMate"
+          data-price="$20"
+          data-img="Products/Household Chemicals/chem1.webp">
           <img src="Products/Household Chemicals/chem1.webp" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">CleanMate</h5>
-          <span class="fw-bold price mb-0">$20</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">CleanMate</h5>
+          <span class="fw-bold price mb-0 ps-1">$20</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -102,11 +106,15 @@
             <i class="fa-solid fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal2">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c2"
+          data-name="PowerWash"
+          data-price="$100"
+          data-img="Products/Household Chemicals/chem2.jpg">
           <img src="Products/Household Chemicals/chem2.jpg" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">PowerWash</h5>
-          <span class="fw-bold price mb-0">$100</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">PowerWash</h5>
+          <span class="fw-bold price mb-0 ps-1">$100</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -114,11 +122,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal3">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c3"
+          data-name="SwiftClean"
+          data-price="$40"
+          data-img="Products/Household Chemicals/chem3.webp">
           <img src="Products/Household Chemicals/chem3.webp" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">SwiftClean</h5>
-          <span class="fw-bold price mb-0">$40</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">SwiftClean</h5>
+          <span class="fw-bold price mb-0 ps-1">$40</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -126,11 +138,15 @@
             <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal4">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c4"
+          data-name="ShineEase"
+          data-price="$132"
+          data-img="Products/Household Chemicals/chem4.png">
           <img src="Products/Household Chemicals/chem4.png" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">ShineEase</h5>
-          <span class="fw-bold price mb-0">$132</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">ShineEase</h5>
+          <span class="fw-bold price mb-0 ps-1">$132</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -138,11 +154,15 @@
             <i class="fa-solid fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal5">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c5"
+          data-name="SparkleFresh"
+          data-price="$155"
+          data-img="Products/Household Chemicals/chem5.jpg">
           <img src="Products/Household Chemicals/chem5.jpg" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">SparkleFresh</h5>
-          <span class="fw-bold price mb-0">$155</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">SparkleFresh</h5>
+          <span class="fw-bold price mb-0 ps-1">$155</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -150,11 +170,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal6">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c6"
+          data-name="PureWash"
+          data-price="$66"
+          data-img="Products/Household Chemicals/chem6.webp">
           <img src="Products/Household Chemicals/chem6.webp" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">PureWash</h5>
-          <span class="fw-bold price mb-0">$66</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">PureWash</h5>
+          <span class="fw-bold price mb-0 ps-1">$66</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
@@ -162,11 +186,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal7">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c7"
+          data-name="BrightNest"
+          data-price="$70"
+          data-img="Products/Household Chemicals/chem7.jpg">
           <img src="Products/Household Chemicals/chem7.jpg" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">BrightNest</h5>
-          <span class="fw-bold price mb-0">$70</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">BrightNest</h5>
+          <span class="fw-bold price mb-0 ps-1">$70</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -174,11 +202,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal8">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c8"
+          data-name="QuickShine"
+          data-price="$88"
+          data-img="Products/Household Chemicals/chem8.jpg">
           <img src="Products/Household Chemicals/chem8.jpg" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">QuickShine</h5>
-          <span class="fw-bold price mb-0">$88</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">QuickShine</h5>
+          <span class="fw-bold price mb-0 ps-1">$88</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -186,11 +218,15 @@
             <i class="fa-solid fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal9">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c9"
+          data-name="WashUp"
+          data-price="$51"
+          data-img="Products/Household Chemicals/chem9.png">
           <img src="Products/Household Chemicals/chem9.png" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">WashUp</h5>
-          <span class="fw-bold price mb-0">$51</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">WashUp</h5>
+          <span class="fw-bold price mb-0 ps-1">$51</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -198,11 +234,15 @@
             <i class="fa-regular fa-star text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal10">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c10"
+          data-name="ClearEase"
+          data-price="$48"
+          data-img="Products/Household Chemicals/chem10.jpg">
           <img src="Products/Household Chemicals/chem10.jpg" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">ClearEase</h5>
-          <span class="fw-bold price mb-0">$48</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">ClearEase</h5>
+          <span class="fw-bold price mb-0 ps-1">$48</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -210,11 +250,15 @@
             <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal11">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c11"
+          data-name="SpotFree"
+          data-price="$30"
+          data-img="Products/Household Chemicals/chem11.webp">
           <img src="Products/Household Chemicals/chem11.webp" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">SpotFree</h5>
-          <span class="fw-bold price mb-0">$30</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">SpotFree</h5>
+          <span class="fw-bold price mb-0 ps-1">$30</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -222,11 +266,15 @@
             <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
           </div>
         </div>
-        <div class="col-md-3 bg-light px-1 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal12">
+        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+          data-id="c12"
+          data-name="SafeClean"
+          data-price="$116"
+          data-img="Products/Household Chemicals/chem12.webp">
           <img src="Products/Household Chemicals/chem12.webp" class="rounded" alt="img" id="product-images">
-          <h5 class="fw-normal family-sans-serif pt-1">SafeClean</h5>
-          <span class="fw-bold price mb-0">$116</span>
-          <div>
+          <h5 class="fw-normal family-sans-serif ps-1 pt-1">SafeClean</h5>
+          <span class="fw-bold price mb-0 ps-1">$116</span>
+          <div class="ps-1">
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
             <i class="fa-solid fa-star text-warning fa-sm"></i>
@@ -248,8 +296,26 @@
     </div>
     <!-- End Switch -->
 
+    <!-- Start Cart Option-->
+     <button id="cart-btn" class="btn btn-md btn-light rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <i class="fa-solid fa-shopping-cart text-dark"></i>
+     </button>
+    <!-- End Cart Option -->
+
+    <!-- Start offCanvas Navbar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offCanvasNavbarLabel" style="z-index: 1100;">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title fw-strong" id="offcanvasNavbarLabel">Your Cart</h3>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="cartItems">
+          
+      </div>
+    </div>
+    <!-- End offCanvas Navbar -->
+    
     <!-- Start Modal -->
-    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered custom-modal">
         <div class="modal-content px-5 pb-4">
           <div class="modal-header">
@@ -262,443 +328,25 @@
           <div class="modal-body">
             <div class="row g-5 align-items-center">
               <div class="col-6">
-                <img src="Products/Household Chemicals/chem1.webp" class="rounded" width="100%" />
+                <img src="" class="rounded" id="modalImg" width="100%" />
               </div>
               <div class="col-6">
                 <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">CleanMate</h1>
-                <h6 class="fw-normal mt-1">Price: $20</h6>
+                <h1 class="fw-bold mb-2" id="modalName"></h1>
+                <h6 class="fw-normal mt-1" id="modalPrice"></h6>
                 <h6 class="fw-normal mb-0">Quantity:</h6>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
                 <div class="dropdown" id="qty-list">
                   <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
                   <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">1</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">2</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">3</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">4</a></li>
+                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">5</a></li>
                   </ul>
                 </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Household Chemicals/chem2.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">PowerWash</h1>
-                <h6 class="fw-normal mt-1">Price: $100</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Household Chemicals/chem3.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">SwiftClean</h1>
-                <h6 class="fw-normal mt-1">Price: $40</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Household Chemicals/chem4.png" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">ShineEase</h1>
-                <h6 class="fw-normal mt-1">Price: $132</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Household Chemicals/chem5.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">SparkleFresh</h1>
-                <h6 class="fw-normal mt-1">Price: $155</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Household Chemicals/chem6.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">PureWash</h1>
-                <h6 class="fw-normal mt-1">Price: $66</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal7" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Household Chemicals/chem7.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">BrightNest</h1>
-                <h6 class="fw-normal mt-1">Price: $70</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal8" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Household Chemicals/chem8.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">QuickShine</h1>
-                <h6 class="fw-normal mt-1">Price: $88</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal9" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Household Chemicals/chem9.png" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">WashUp</h1>
-                <h6 class="fw-normal mt-1">Price: $51</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal10" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Household Chemicals/chem10.jpg" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">ClearEase</h1>
-                <h6 class="fw-normal mt-1">Price: $48</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal11" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Household Chemicals/chem11.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">SpotFree</h1>
-                <h6 class="fw-normal mt-1">Price: $30</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal12" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="Products/Household Chemicals/chem12.webp" class="rounded" width="100%" />
-              </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2">SafeClean</h1>
-                <h6 class="fw-normal mt-1">Price: $116</h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded" href="#">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2">Add To Cart</button>
+                <button class="btn btn-sm orng-btn mt-0 py-2 add-btn" data-bs-dismiss="modal">Add To Cart</button>
               </div>
             </div>
           </div>
@@ -706,6 +354,12 @@
       </div>
     </div>
     <!-- End Modal  -->
+
+    <!-- Start Cart Message -->
+    <div class="fixed-bottom d-flex justify-content-center">
+     <p class="cart-message fw-strong text-white py-2 px-2 hide"><span class="bg-white rounded-circle p-1"><i class="fa-solid fa-check" style="color: rgb(3, 197, 3); font-size:1.2rem;"></i></span> item added to cart</p>
+    </div>
+    <!-- End Cart Message -->
 
     <!-- Start Footer -->
     <footer class="bg-dark text-white mt-4 py-2">

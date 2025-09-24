@@ -8,9 +8,9 @@ html {
 /* Hero Image Css */
 .hero {
   background: 
-    linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), 
+    linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), 
     url("Hero/heroImg.webp") center / cover no-repeat;
-  height: 80vh; /* mobile ke liye chhoti height */
+  height: 50vh; /* mobile ke liye chhoti height */
   
 }
 
@@ -18,8 +18,9 @@ html {
 @media (min-width: 768px) {
   .hero {
     background: 
-      linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), 
+      linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), 
       url("Hero/heroImg.webp") center / cover no-repeat;
+    height: 75vh;
   }
 }
 
@@ -27,7 +28,7 @@ html {
 @media (min-width: 1200px) {
   .hero {
     background: 
-      linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), 
+      linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), 
       url("Hero/heroImg.webp") center / cover no-repeat;
     height: 100vh;
   }
@@ -71,17 +72,22 @@ html {
 }
 
 /* Category Css */
-#category-images {
+/* .category-images {
   width: 100%;
   height: 307px;
   object-fit: cover;
-}
+} */
 .prdt-img {
   transition: transform 0.5s;
   cursor: pointer;
 }
 .prdt-img:hover {
   transform: translateY(-5px);
+}
+@media(max-width: 767px) {
+  .categories {
+    width: 90%;
+  }
 }
 
 /* Products Css */
@@ -176,6 +182,19 @@ html {
       .modal.show .popup-modal {
         transform: scale(1);
       } */
+.cart-message {
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  background-color: rgb(3, 197, 3);
+  font-size: 1.1rem;
+}
+#cart-btn {
+  position:fixed;
+  display:none;
+  top: 70px;
+  right: 20px;
+  z-index: 1050;
+}
 
 /* Gallery Css */
 .glry-banr {
