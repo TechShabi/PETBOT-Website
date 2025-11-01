@@ -61,211 +61,299 @@
     </nav>
     <!-- End Navbar -->
 
-    
+  <!-- CAROUSEL
+  <div id="petCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner text-center bg-light">
+      <div class="carousel-item active">
+        <img src="Hero/heroImg.webp" class="d-block mx-auto img-fluid"
+          alt="Bottle 1" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Premium Water Bottles</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Hero/heroImg2.png" class="d-block mx-auto img-fluid"
+          alt="Bottle 2" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Hygienic & Durable</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Hero/heroImg.webp" class="d-block mx-auto img-fluid"
+          alt="Bottle 3" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Trusted by Industries</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#petCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#petCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div> -->
+
     <!-- Start Hero -->
     <div class="hero text-center custom-gap">
       <h1 class="display-4 fw-bold text">Premium PET/PP/PC Bottles</h1>
       <p class="lead text">Manufacturers • Suppliers • Exporters</p>
-      <a class="btn orng-btn btn-lg" href="#categories">Explore Products &#10137;</a>
+      <a class="nav-link d-inline-block" href="#categories"><button class="btn orng-btn explore-btn text-center">Explore Products &#10137;</button></a>
     </div>
     <!-- End Hero -->
     
     
     <!-- Start Category -->
-    <div class="container-fluid custom-gap" id="categories">
+    <div class="container custom-gap" id="categories">
       <h2 class="fw-bold pt-4 pb-5 text-center mb-4 title">Categories</h2>
-      <div class="row justify-content-center g-3">
-        <div class="categories col-md-3 bg-light prdt-img mx-1 px-1 rounded shadow-sm border">
+      <div class="row justify-content-center g-4">
+        <div class="categories col-11 col-sm-4 col-xl-3 bg-light rounded border shadow-sm">
           <a class="nav-link" href="jars.html">
-            <img src="Categories/category1.webp" class="img-fluid rounded" alt="img"/>
-            <h5 class="fw-strong text-center pt-3 pb-2">Jars</h5>
+            <img src="Categories/category1.webp" class="img-fluid category-images rounded" alt="img"/>
+            <h5 class="ctgry-name text-center pt-3 pb-2">Jars</h5>
           </a>
         </div>
-        <div class="categories col-md-3 bg-light prdt-img mx-1 px-1 rounded shadow-sm border">
+        <div class="categories col-11 col-sm-4 col-xl-3 bg-light rounded border shadow-sm">
           <a class="nav-link" href="bottles.html">
-            <img src="Categories/category2.webp" class="img-fluid rounded" alt="img"/>
-            <h5 class="fw-strong text-center pt-3 pb-2">Bottles</h5>
+            <img src="Categories/category2.webp" class="img-fluid category-images rounded" alt="img"/>
+            <h5 class="ctgry-name text-center pt-3 pb-2">Bottles</h5>
           </a>
         </div>
-        <div class="categories col-md-3 bg-light prdt-img mx-1 px-1 rounded shadow-sm border">
+        <div class="categories col-11 col-sm-4 col-xl-3 bg-light rounded border shadow-sm">
           <a class="nav-link" href="oils.html">
-            <img src="Categories/category3.webp" class="img-fluid rounded" alt="img"/>
-            <h5 class="fw-strong text-center pt-3 pb-2">Edible Oils</h5>
+            <img src="Categories/category3.webp" class="img-fluid category-images rounded" alt="img"/>
+            <h5 class="ctgry-name text-center pt-3 pb-2">Edible Oils</h5>
           </a>
         </div>
-        <div class="categories col-md-3 bg-light prdt-img mx-1 px-1 rounded shadow-sm border">
+        <div class="categories col-11 col-sm-4 col-xl-3 bg-light rounded border shadow-sm">
           <a class="nav-link" href="pharma.html">
-            <img src="Categories/category4.webp" class="img-fluid rounded" alt="img"/>
-            <h5 class="fw-strong text-center pt-3 pb-2">Pharmaceuticals</h5>
+            <img src="Categories/category4.webp" class="img-fluid category-images rounded" alt="img"/>
+            <h5 class="ctgry-name text-center pt-3 pb-2">Pharmaceuticals</h5>
           </a>
         </div>
-        <div class="categories col-md-3 bg-light prdt-img mx-1 px-1 rounded shadow-sm border">
+        <div class="categories col-11 col-sm-4 col-xl-3 bg-light rounded border shadow-sm">
           <a class="nav-link" href="chem.html">
-            <img src="Categories/category5.webp" class="img-fluid rounded" alt="img"/>
-            <h5 class="fw-strong text-center pt-3 pb-2">Household Chemicals</h5>
+            <img src="Categories/category5.webp" class="img-fluid category-images rounded" alt="img"/>
+            <h5 class="ctgry-name text-center pt-3 pb-2">Household Chemicals</h5>
           </a>
         </div>
       </div>
+    </div>
     <!-- End Category -->
 
     <!-- Start Featured -->
-    <div class="container px-4 mt-4 pt-5">
+    <div class="container px-0 mt-4 pt-5">
       <h2 class="fw-bold pb-5 text-center title">Featured Products</h2>
-      <div class="row mt-4 pt-2 g-3 justify-content-center">
-        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
-          data-id = "h1"
-          data-name="ClearSip"
-          data-price="$80"
-          data-img="Featured/product-1.jpg">
-          <img src="Featured/product-1.jpg" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif ps-1 pt-1">ClearSip</h5>
-          <p class="fw-bold price mb-0 ps-1">$80.00</p>
-          <span class="ps-1">
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
-          </span>
+      <div class="row mt-4 pt-2 justify-content-center">
+        <div class="card col-5 col-sm-4 col-md-3 col-xl-2 mt-4 d-flex justify-content-center">
+          <div class="product bg-light shadow-sm pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+            data-id = "h1"
+            data-name="ClearSip"
+            data-price="$80"
+            data-img="Featured/product-1.jpg">
+            <img src="Featured/product-1.jpg" class="product-images" alt="img" />
+            <h5 class="fw-normal family-sans-serif ps-1 py-1">ClearSip</h5>
+            <p class="fw-bold price mb-0 ps-1">$80.00</p>
+            <span class="ps-1">
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+            </span>
+          </div>
         </div>
-        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
-          data-id = "h2"
-          data-name="HydrateX"
-          data-price="$110"
-          data-img="Featured/product-2.webp">
-          <img src="Featured/product-2.webp" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif ps-1 pt-1">HydrateX</h5>
-          <p class="fw-bold price mb-0 ps-1">$110.00</p>
-          <span class="ps-1">
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-          </span>
+        <div class="card col-5 col-sm-4 col-md-3 col-xl-2 mt-4 d-flex justify-content-center">
+          <div class="product bg-light shadow-sm pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+            data-id = "h2"
+            data-name="HydrateX"
+            data-price="$110"
+            data-img="Featured/product-2.webp">
+            <img src="Featured/product-2.webp" class="product-images" alt="img" />
+            <h5 class="fw-normal family-sans-serif ps-1 py-1">HydrateX</h5>
+            <p class="fw-bold price mb-0 ps-1">$110.00</p>
+            <span class="ps-1">
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+            </span>
+          </div>
         </div>
-        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
-          data-id = "h3"
-          data-name="NutriJar"
-          data-price="$95"
-          data-img="Featured/product-3.webp">
-          <img src="Featured/product-3.webp" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif ps-1 pt-1">NutriJar</h5>
-          <p class="fw-bold price mb-0 ps-1">$95.00</p>
-          <span class="ps-1">
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-          </span>
+        <div class="card col-5 col-sm-4 col-md-3 col-xl-2 mt-4 d-flex justify-content-center">
+          <div class="product bg-light shadow-sm pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+            data-id = "h3"
+            data-name="NutriJar"
+            data-price="$95"
+            data-img="Featured/product-3.webp">
+            <img src="Featured/product-3.webp" class="product-images" alt="img" />
+            <h5 class="fw-normal family-sans-serif ps-1 py-1">NutriJar</h5>
+            <p class="fw-bold price mb-0 ps-1">$95.00</p>
+            <span class="ps-1">
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+            </span>
+          </div>
         </div>
-        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
-          data-id = "h4"
-          data-name="SafeRx"
-          data-price="$30"
-          data-img="Featured/product-4.jpg">
-          <img src="Featured/product-4.jpg" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif ps-1 pt-1">SafeRx</h5>
-          <p class="fw-bold price mb-0 ps-1">$30.00</p>
-          <span class="ps-1">
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-regular fa-star text-warning fa-sm"></i>
-          </span>
+        <div class="card col-5 col-sm-4 col-md-3 col-xl-2 mt-4 d-flex justify-content-center">
+          <div class="product bg-light shadow-sm pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+            data-id = "h4"
+            data-name="SafeRx"
+            data-price="$30"
+            data-img="Featured/product-4.jpg">
+            <img src="Featured/product-4.jpg" class="product-images" alt="img" />
+            <h5 class="fw-normal family-sans-serif ps-1 py-1">SafeRx</h5>
+            <p class="fw-bold price mb-0 ps-1">$30.00</p>
+            <span class="ps-1">
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-regular fa-star text-warning fa-sm"></i>
+            </span>
+          </div>
         </div>
-        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
-          data-id = "h5"
-          data-name="PureHold Jar"
-          data-price="$150"
-          data-img="Featured/product-5.webp">
-          <img src="Featured/product-5.webp" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif ps-1 pt-1">PureHold Jar</h5>
-          <p class="fw-bold price mb-0 ps-1">$150.00</p>
-          <span class="ps-1">
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-          </span>
+        <div class="card col-5 col-sm-4 col-md-3 col-xl-2 mt-4 d-flex justify-content-center">
+          <div class="product bg-light shadow-sm pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+            data-id = "h5"
+            data-name="PureHold Jar"
+            data-price="$150"
+            data-img="Featured/product-5.webp">
+            <img src="Featured/product-5.webp" class="product-images" alt="img" />
+            <h5 class="fw-normal family-sans-serif ps-1 py-1">PureHold Jar</h5>
+            <p class="fw-bold price mb-0 ps-1">$150.00</p>
+            <span class="ps-1">
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+            </span>
+          </div>
         </div>
-        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
-          data-id = "h6"
-          data-name="CleanXtra"
-          data-price="$50"
-          data-img="Featured/product-6.jpg">
-          <img src="Featured/product-6.jpg" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif ps-1 pt-1">CleanXtra</h5>
-          <p class="fw-bold price mb-0 ps-1">$50.00</p>
-          <span class="ps-1">
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-regular fa-star text-warning fa-sm"></i>
-          </span>
+        <div class="card col-5 col-sm-4 col-md-3 col-xl-2 mt-4 d-flex justify-content-center">
+          <div class="product bg-light shadow-sm pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+            data-id = "h6"
+            data-name="CleanXtra"
+            data-price="$50"
+            data-img="Featured/product-6.jpg">
+            <img src="Featured/product-6.jpg" class="product-images" alt="img" />
+            <h5 class="fw-normal family-sans-serif ps-1 py-1">CleanXtra</h5>
+            <p class="fw-bold price mb-0 ps-1">$50.00</p>
+            <span class="ps-1">
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-regular fa-star text-warning fa-sm"></i>
+            </span>
+          </div>
         </div>
-        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
-          data-id = "h7"
-          data-name="DailyMeds"
-          data-price="$20"
-          data-img="Featured/product-7.jpg">
-          <img src="Featured/product-7.jpg" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif ps-1 pt-1">DailyMeds</h5>
-          <p class="fw-bold price mb-0 ps-1">$20.00</p>
-          <span class="ps-1">
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
-          </span>
+        <div class="card col-5 col-sm-4 col-md-3 col-xl-2 mt-4 d-flex justify-content-center">
+          <div class="product bg-light shadow-sm pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+            data-id = "h7"
+            data-name="DailyMeds"
+            data-price="$20"
+            data-img="Featured/product-7.jpg">
+            <img src="Featured/product-7.jpg" class="product-images" alt="img" />
+            <h5 class="fw-normal family-sans-serif ps-1 py-1">DailyMeds</h5>
+            <p class="fw-bold price mb-0 ps-1">$20.00</p>
+            <span class="ps-1">
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+            </span>
+          </div>
         </div>
-        <div class="product col-6 col-sm-4 col-md-3 bg-light px-0 prdt-img rounded shadow-sm border pb-1" data-bs-toggle="modal" data-bs-target="#modal"
-          data-id = "h8"
-          data-name="ChefEase"
-          data-price="$35"
-          data-img="Featured/product-8.webp">
-          <img src="Featured/product-8.webp" class="rounded" alt="img" id="product-images" />
-          <h5 class="fw-normal family-sans-serif ps-1 pt-1">ChefEase</h5>
-          <p class="fw-bold price mb-0 ps-1">$35.00</p>
-          <span class="ps-1">
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star text-warning fa-sm"></i>
-            <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
-          </span>
+        <div class="card col-5 col-sm-4 col-md-3 col-xl-2 mt-4 d-flex justify-content-center">
+          <div class="product bg-light shadow-sm pb-1" data-bs-toggle="modal" data-bs-target="#modal"
+            data-id = "h8"
+            data-name="ChefEase"
+            data-price="$35"
+            data-img="Featured/product-8.webp">
+            <img src="Featured/product-8.webp" class="product-images" alt="img" />
+            <h5 class="fw-normal family-sans-serif ps-1 py-1">ChefEase</h5>
+            <p class="fw-bold price mb-0 ps-1">$35.00</p>
+            <span class="ps-1">
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star text-warning fa-sm"></i>
+              <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+            </span>
+          </div>
         </div>
       </div>
     </div>
     <!-- End Featured -->
 
     <!-- Start Cart Option-->
-     <button id="cart-btn" class="btn btn-md btn-light rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+    <button id="cart-btn" class="btn btn-md btn-light rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
       <i class="fa-solid fa-shopping-cart text-dark"></i>
-     </button>
+      <span id="cart-count" class="d-flex bg-danger text-center text-white rounded-circle hide">
+        <i id="count">1</i>
+      </span>
+    </button>
     <!-- End Cart Option -->
 
     <!-- Start offCanvas Navbar -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offCanvasNavbarLabel" style="z-index: 1100;">
       <div class="offcanvas-header">
-        <h3 class="offcanvas-title fw-strong" id="offcanvasNavbarLabel">Your Cart</h3>
+        <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Your Cart</h2>
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body" id="cartItems">
-          
+      <div class="offcanvas-body">
+        <div id="cartItems">
+
+        </div>
+        <div id="moreItems">
+          <hr class="mb-2">
+          <button class="btn" style="border: none; font-size: 1.1rem;" data-bs-dismiss="offcanvas"><span style="font-size: 1.5rem">+</span> Add more items</button>
+        </div>
+        <div id="cartBody" class="d-flex justify-content-center align-items-center" style="height: 100%;">
+          <p class="m-0" style="font-size: 1.5rem; font-weight: strong;">Your Cart Is Empty!</p>
+        </div>
+        <div id="cart-amount">
+          <hr>
+          <span class="d-flex justify-content-between align-items-center px-3" style="width: 100%;">
+            <p class="mb-0" style="font-size: 1.2rem; font-family:Arial, Helvetica, sans-serif">Total</p>
+            <p class="mb-0" id="total" style="font-size: 1.1rem;">$100</p>
+          </span>
+          <span class="d-flex justify-content-between align-items-center px-3" style="width: 100%;">
+            <p class="mb-0" style="font-size: 1.2rem; font-family:Arial, Helvetica, sans-serif">Delivery Fee</p>
+            <p class="mb-0" id="delivery" style="font-size: 1.1rem;">$100</p>
+          </span>
+          <span class="d-flex justify-content-between align-items-center px-3" style="width: 100%;">
+            <p class="mb-0" style="font-size: 1.2rem; font-family:Arial, Helvetica, sans-serif">Grand Total</p>
+            <p class="mb-0" id="grand" style="font-size: 1.1rem;"></p>
+          </span>
+        </div>
+      </div>
+      <div class="px-1 py-1" id="checkout">
+        <button class="btn orng-btn d-flex justify-content-between align-items-center py-2 px-4" style="width: 100%; font-size: 1.4rem; border-radius: 12px;">
+          <span class="d-flex flex-column justify-content-center text-start">
+            <p class="m-0" style="font-size: 13px; font-family:Arial, Helvetica, sans-serif">Grand Total</p>
+            <strong class="m-0 pb-1" id="check-grand" style="font-size: 1.6rem; line-height: 20px;"></strong>
+          </span>
+          <span class="d-flex align-items-center">
+            <p class="m-0">Checkout</p>
+            <i class="fas fa-arrow-right mx-1"></i>
+          </span>
+        </button>
       </div>
     </div>
     <!-- End offCanvas Navbar -->
     
     <!-- Start Modal -->
     <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered custom-modal">
-        <div class="modal-content px-5 pb-4">
+      <div class="modal-dialog modal-dialog-centered custom-modal justify-content-center">
+        <div class="modal-content">
           <div class="modal-header">
             <button
               type="button"
@@ -274,27 +362,29 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="row g-5 align-items-center">
-              <div class="col-6">
-                <img src="" class="rounded" id="modalImg" width="100%" />
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
+            <div class="row g-5 align-items-center justify-content-center">
+              <div class="body-col col-5 mt-4">
+                <img src="" class="rounded" id="modalImg" />
               </div>
-              <div class="col-6">
-                <p class="mb-2">Home / Products</p>
-                <h1 class="fw-bold mb-2" id="modalName"></h1>
-                <h6 class="fw-normal mt-1" id="modalPrice"></h6>
-                <h6 class="fw-normal mb-0">Quantity:</h6>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#qty-list"></button>
-                <div class="dropdown" id="qty-list">
-                  <button class="btn nav-btn qtyBtns shadow-sm dropdown-toggle border py-1 px-2 qty mb-3" href="" type="button" data-bs-toggle="dropdown">1</button>
-                  <ul class="dropdown-menu dropdown-width">
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">1</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">2</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">3</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">4</a></li>
-                    <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">5</a></li>
-                  </ul>
-                </div>
-                <button class="btn btn-sm orng-btn mt-0 py-2 add-btn" data-bs-dismiss="modal">Add To Cart</button>
+              <div class="body-col col-5 col-sm-6 my-4">
+                <p class="py-1 m-0">Home / Products</p>
+                <h1 class="fw-bold pb-3 m-0" id="modalName"></h1>
+                <h6 class="fw-normal py-1 m-0" id="modalPrice"></h6>
+                <span class="d-flex align-items-center">
+                  <h6 class="fw-normal mb-0">Quantity:</h6>
+                  <div class="dropdown mx-2" id="qty-list">
+                    <button class="btn nav-btn qty qtyBtns shadow-sm dropdown-toggle border py-1 px-2" href="" type="button" data-bs-toggle="dropdown">1</button>
+                    <ul class="dropdown-menu dropdown-width">
+                      <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">1</a></li>
+                      <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">2</a></li>
+                      <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">3</a></li>
+                      <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">4</a></li>
+                      <li><a class="dropdown-item qtyBtns qtyVal nav-btn py-1 rounded">5</a></li>
+                    </ul>
+                  </div>
+                </span>
+                <button class="btn btn-sm orng-btn mt-3 py-2 add-btn" data-bs-dismiss="modal">Add To Cart</button>
               </div>
             </div>
           </div>
@@ -305,7 +395,7 @@
 
     <!-- Start Cart Message -->
     <div class="fixed-bottom d-flex justify-content-center">
-     <p class="cart-message fw-strong text-white py-2 px-2 hide"><span class="bg-white rounded-circle p-1"><i class="fa-solid fa-check" style="color: rgb(3, 197, 3); font-size:1.2rem;"></i></span> item added to cart</p>
+     <p class="cart-message fw-strong text-white py-2 px-2 hide"><span class="bg-white rounded-circle" style="padding: 3px;"><i class="fa-solid fa-check" style="color: rgb(3, 197, 3); font-size:1.2rem;"></i></span> item added to cart</p>
     </div>
     <!-- End Cart Message -->
 
@@ -341,15 +431,15 @@
     <!-- End Feedback -->
 
     <!-- Start Footer -->
-    <footer class="bg-dark text-white mt-4 py-2">
+    <footer class="bg-dark text-white mt-4">
       <div class="container">
         <div class="row py-5">
-          <div class="col-md-4">
+          <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
             <h5>PETBOT</h5>
             <p>High Quality Pet Bottle Solutions</p>
           </div>
-          <div class="col-md-2">
-            <h6>Sitemap</h6>
+          <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
+            <h6 class="mb-2">Sitemap</h6>
             <ul>
               <li><a class="nav-link nav-btn" href="index.html">Home</a></li>
               <li><p class="mb-0">Products</p></li>
@@ -362,19 +452,21 @@
               <li><a class="nav-link nav-btn" href="about.html">About Us</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-4 col-6">
+          <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
             <h6>Downloads</h6>
             <a class="nav-link nav-btn" href="">Specs PDF</a>
             <a class="nav-link nav-btn" href="">Company DOC</a>
           </div>
-          <div class="col-lg-3 col-md-4 col-6">
+          <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
             <h6>Contact</h6>
-            <p>Info@petbot.com<br>+00 123 4567</p>
+            <p class="mb-0">Info@petbot.com</p>
+            <p>+00 123 4567</p>
           </div>
         </div>
         <hr>
         <p class="copyright">
-          Copyright 2025 - PETBot</p>
+          &copy; 2025 - PETBot
+        </p>
       </div>
     </footer>
     <!-- End Footer -->

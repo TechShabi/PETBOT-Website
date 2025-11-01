@@ -4,7 +4,7 @@ function filter() {
     input = document.getElementById("search");
     filterValue = input.value.toUpperCase();
     ProductList = document.getElementById("product-list");
-    ProductName = ProductList.getElementsByClassName("col-md-3");
+    ProductName = ProductList.getElementsByClassName("product");
     for(i=0; i<ProductName.length; i++) {
         h5 = ProductName[i].getElementsByTagName("h5")[0];
         // In Search if typed string matches with the element name.
@@ -86,7 +86,7 @@ function highList() {
 // End Sort Func
 
 //Start Quantity Options Func
-const Btns = document.querySelectorAll(".qtyVal");
+let Btns = document.querySelectorAll(".qtyVal");
 
 Btns.forEach(btn => {
     btn.addEventListener("click", function (e) {
@@ -95,13 +95,14 @@ Btns.forEach(btn => {
         let selectedQty = this.textContent.trim();
 
         //har button apne modal ke andar jo qty span hai usko dhoondo.
-        const modal = this.closest(".modal");
-        const Val = modal.querySelector(".qty");
+        let modal = this.closest(".modal");
+        let Val = modal.querySelector(".qty");
         
         //update only inside that modal.
         if(Val) {
             Val.textContent = selectedQty;
-        }
+            selectedProduct.qty = selectedQty;
+        } 
     });
 });
 
@@ -147,12 +148,14 @@ document.getElementById("modal").addEventListener('show.bs.modal', function(even
                 id: productId,
                 name: prod.dataset.name,
                 price: prod.dataset.price,
-                img: prod.dataset.img
+                img: prod.dataset.img,
+                qty: '1'
             };
             
             document.getElementById('modalName').innerText = selectedProduct.name;
             document.getElementById('modalPrice').innerText = "Price: " + selectedProduct.price;
             document.getElementById('modalImg').src = selectedProduct.img;
+            
             
             //Add Button Disabled
             const btn = document.querySelector(".add-btn");
@@ -184,8 +187,9 @@ document.addEventListener("click", function(e) {
             addedProducts.add(selectedProduct.id); //product ko "added" mark kar diya
             cartMsg.classList.remove('hide');
             document.getElementById('cart-btn').style.display = "block";
-
+            
             renderCart();
+            checkQty();
             
             setTimeout(() => {
                 cartMsg.classList.add('hide');
@@ -194,49 +198,138 @@ document.addEventListener("click", function(e) {
     }
 });
 
+function checkQty() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    addedProducts.forEach(id => {
+        let product = cart.find(item => item.id === id);
+
+        if(product) {
+            if(Number(product.qty == 1)) {
+                document.querySelector(`#sub-btn-${id}`).classList.add("hide");
+                document.querySelector(`#del-btn-${id}`).classList.remove("hide");
+                
+            } else if(Number(product.qty > 1)) {
+                document.querySelector(`#sub-btn-${id}`).classList.remove("hide");
+                document.querySelector(`#del-btn-${id}`).classList.add("hide");
+            }
+        }
+    })
+};
 
 function renderCart() {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     let cartItems = document.getElementById('cartItems');
-
+    let totalItems = 0;
+    
     cartItems.innerHTML = "";
-
+    
     if(cart.length === 0) {
         document.getElementById('cart-btn').style.display = "none";
+        document.getElementById('cart-count').classList.add('hide');
+        document.getElementById("cartBody").classList.remove('hide');
+        document.getElementById("moreItems").classList.add('hide');
+        document.getElementById("cart-amount").classList.add('hide');
+        document.getElementById("checkout").classList.add('hide');
+        
     } else {
         document.getElementById('cart-btn').style.display = "block";
+        document.getElementById('cart-count').classList.remove('hide');
+        document.getElementById("cartBody").classList.add('hide');
+        document.getElementById("moreItems").classList.remove('hide');
+        document.getElementById("cart-amount").classList.remove('hide');
+        document.getElementById("checkout").classList.remove('hide');
+        
         cartItems.innerHTML = "";
         cart.forEach(item => {
             cartItems.innerHTML += `
             <div class="d-flex align-items-center mb-2">
-                <img src="${item.img}" width="60" class="me-2">
+                <img src="${item.img}" width="80" height="80" class="object-fit-cover rounded me-2">
                 <div>
-                    <small class="mb-0">${item.name}</small>
+                    <small class="mb-0" style="font-size: 20px;">${item.name}</small>
                     <h6>Rs. ${item.price}<h6>
-                </div>
-                <button class="btn btn-sm ms-auto" onclick="removeItem('${item.id}')">
-                    <i class="fas fa-trash text-danger"></i>
-                </button>
-            </div>`
+                </div
+                <div>
+                    <button class="btn btn-sm d-flex align-items-center ms-auto py-1 px-3" style="cursor: default; border: 1px solid #ff523b; border-radius: 25px;">
+                        <i class="fas fa-subtract pe-2" style="cursor: pointer; color: #ff523b;" id="sub-btn-${item.id}" onclick="subQty('${item.id}')"></i>
+                        <i class="fas fa-trash text-danger pe-2" style="cursor: pointer" id="del-btn-${item.id}" onclick="removeItem('${item.id}')"></i>
+                        <p class="mx-1 mb-0" style="cursor:text" id="qtyValue-${item.id}">${item.qty}</p>
+                        <i class="fas fa-add ps-2" style="cursor: pointer; color: #ff523b" id="add-btn" onclick="addQty('${item.id}')"></i>
+                    </button>
+                </div>  
+                </div>`
+                
+            updateCartTotal();
+            totalItems ++;
+            document.getElementById("count").innerHTML = totalItems;
         });
+    };
+};
+  
+function addQty(id) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let product = cart.find(item => item.id === id);
+
+    if(product) {
+        product.qty = Number(product.qty) + 1;
+        document.querySelector(`#qtyValue-${id}`).innerText = product.qty;
+        localStorage.setItem("cart", JSON.stringify(cart));
     }
+    
+    if(product.qty > 1) {
+        document.querySelector(`#sub-btn-${id}`).classList.remove("hide");
+        document.querySelector(`#del-btn-${id}`).classList.add("hide");
+    } 
+    updateCartTotal();
 }
+
+function subQty(id) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let product = cart.find(item => item.id === id); 
+    
+    if(product) {
+        product.qty = Number(product.qty) - 1;
+        document.querySelector(`#qtyValue-${id}`).innerText = product.qty;
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
+    
+    if(product.qty == 1) {
+        document.querySelector(`#sub-btn-${id}`).classList.add("hide");
+        document.querySelector(`#del-btn-${id}`).classList.remove("hide");
+    } 
+    updateCartTotal();
+}
+
+function updateCartTotal() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let delivery = document.getElementById("delivery").innerHTML.replace("$","");
+    let total = 0;
+    
+    cart.forEach(item => {
+        let price = Number(item.price.replace("$",""));
+        total += price * item.qty;
+        
+    });
+    let grandTotal = Number(total) + Number(delivery);
+    
+    document.getElementById("total").innerHTML = "$" + total.toFixed(2);
+    document.getElementById("grand").innerHTML = "$" + grandTotal.toFixed(2);
+    document.getElementById("check-grand").innerHTML = "$" + grandTotal.toFixed(2);
+};
 
 
 function removeItem(id) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    
     cart = cart.filter(item => String(item.id) !== String(id));
-
     localStorage.setItem("cart", JSON.stringify(cart));
     
+    updateCartTotal();
     addedProducts.delete(String(id));
-
     
     renderCart();
+    checkQty();
+    updateCartTotal();
     
-    document.getElementById('cart-btn').style.display = "none";
-
     const btn = document.querySelector(`.add-btn[data-id="${String(id)}"]`);
     if(btn) {
         btn.disabled = false;
@@ -244,7 +337,24 @@ function removeItem(id) {
     }
 };
 
+
 document.addEventListener("DOMContentLoaded", () => {
     renderCart(); //har page load pai cart auto show hooga
+    updateCartTotal();
+    restoreButtonStates(); //refresh kai baad button disable state restore ho jaye
+    checkQty();
 });
+
+function restoreButtonStates() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.forEach(item => {
+        const btn = document.querySelector(`.add-btn[data-id="${item.id}]`);
+        if(btn) {
+            btn.disable = true;
+            btn.innerText = "Added";
+        }
+        addedProducts.add(item.id);
+    });
+}
 
